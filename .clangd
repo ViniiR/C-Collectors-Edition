@@ -1,0 +1,7 @@
+# CompileFlags:
+#   Add: [-Wno-nested-anon-types, -Wno-gnu-statement-expression]
+Diagnostics:
+  Suppress:
+    - "typecheck_sclass_func"
+    - "attribute_cleanup_arg_not_function"
+    - "function_definition_not_allowed"

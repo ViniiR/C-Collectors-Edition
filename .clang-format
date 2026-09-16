@@ -1,0 +1,40 @@
+Language: C
+BasedOnStyle: LLVM
+
+IndentWidth: 4
+UseTab: Never
+AccessModifierOffset: -4
+
+BinPackParameters: false
+BinPackArguments: false
+AlignAfterOpenBracket: BlockIndent
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: false
+
+AlwaysBreakAfterReturnType: None
+AlwaysBreakAfterDefinitionReturnType: None
+PenaltyReturnTypeOnItsOwnLine: 1000
+
+ForEachMacros:
+  - "for ever"
+  - "for each"
+  - "for range"
+  - "for rangex"
+
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+  AfterForeachMacros: false
+
+StatementMacros:
+  - "for ever"
+  - "for each"
+  - "for range"
+  - "for rangex"
+
+Macros:
+  - ever=(;;)
+  - each(i, a, b)=(int i = a; i < b; i++)
+  - range(i, a, b)=(int i = a; i < b; i++)
+  - rangex(i, a, b)=(int i = a; i < b; i++)
